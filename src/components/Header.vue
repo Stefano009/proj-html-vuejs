@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <h1> HEADER</h1>
+  <div id="header">
     <Nav />
     <Jumbo />
   </div>
@@ -21,4 +20,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+#header {
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-image: url("../assets/img/bg-parallax.png");
+    height:85vh;
+    width: 100vw;
+}
 </style>

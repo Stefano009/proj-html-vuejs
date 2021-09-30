@@ -20,8 +20,11 @@ export default {
 
 <style lang="scss">
 @import './assets/Style/brandColors.scss';
-h1 {
-  color: $santaFe;
+@import './assets/Style/general.scss';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+#App {
+  height: 100vh;
+  width: 100vw;
 }
 
 
