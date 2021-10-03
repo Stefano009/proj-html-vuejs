@@ -12,7 +12,7 @@ export default {
   name: 'Header',
   components: {
     Nav,
-    Jumbo
+    Jumbo,
   }
  
 }
@@ -24,7 +24,8 @@ export default {
     background-repeat: no-repeat;
     background-position: 50% 40%;
     background-image: url("../assets/img/bg-parallax.png");
-    height:85vh;
+    height:80vh;
     width: 100vw;
 }
+
 </style>

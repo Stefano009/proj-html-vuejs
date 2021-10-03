@@ -87,6 +87,8 @@ export default {
   
 }
 .sticky {
+    position: sticky;
+    top: 0;
     display:flex;
     width: 80%;
     margin: 0 auto;
@@ -94,7 +96,7 @@ export default {
     align-items: center;
     padding-top: 20px;
     img {
-      width:180px;
+      width:140px;
     }
     .nav {
       text-transform: uppercase;
