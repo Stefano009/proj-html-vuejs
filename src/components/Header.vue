@@ -25,7 +25,7 @@ export default {
     background-position: 50% 40%;
     background-image: url("../assets/img/bg-parallax.png");
     height:80vh;
-    width: 100vw;
+    max-width: 100vw;
 }
 
 </style>

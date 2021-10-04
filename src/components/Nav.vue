@@ -89,6 +89,7 @@ export default {
 .sticky {
     position: sticky;
     top: 0;
+    left:0;
     display:flex;
     width: 80%;
     margin: 0 auto;

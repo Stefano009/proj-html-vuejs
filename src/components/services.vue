@@ -50,7 +50,7 @@ export default {
 @import '../assets/Style/brandColors.scss';
     .wrapper {
         height: 100vh;
-        width: 100vw;
+        max-width: 100vw;
         background-color: #EEF4ED;
         .inner {
             width: 60%;
@@ -104,10 +104,11 @@ export default {
                    margin:15px;
                    background-color: $white;
                    border-radius: .5rem;
+                   padding-left: 30px;
                    .first-row {
                        display: flex;
                        justify-content: space-between;
-                       height:calc(100% / 2);
+                       height:calc((100% / 3) + 15px);
                        padding: 30px 20px;
                        img {
                            height: 50px;
