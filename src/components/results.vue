@@ -37,6 +37,7 @@ export default {
 @import '../assets/Style/brandColors.scss';
 .wrapper {
     height: 90vh;
+    width: 100vw;
     .big-row {
         background-image: url("../assets/img/bg-7.jpg");
         height:70%;

@@ -5,6 +5,7 @@
     <Company />
     <Projects />
     <Results />
+    <Form />
     <Footer />
   </div>
 </template>
@@ -16,6 +17,7 @@ import Services from './components/services.vue'
 import Company from './components/company.vue'
 import Projects from './components/projects.vue'
 import Results from './components/results.vue'
+import Form from './components/form.vue'
 export default {
   name: 'App',
   components: {
@@ -24,7 +26,8 @@ export default {
     Services,
     Company,
     Projects,
-    Results
+    Results,
+    Form
   }
 }
 </script>
