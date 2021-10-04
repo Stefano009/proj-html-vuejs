@@ -3,6 +3,8 @@
     <Header />
     <Services />
     <Company />
+    <Projects />
+    <Results />
     <Footer />
   </div>
 </template>
@@ -12,13 +14,17 @@ import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 import Services from './components/services.vue'
 import Company from './components/company.vue'
+import Projects from './components/projects.vue'
+import Results from './components/results.vue'
 export default {
   name: 'App',
   components: {
     Header,
     Footer,
     Services,
-    Company
+    Company,
+    Projects,
+    Results
   }
 }
 </script>
@@ -28,8 +34,8 @@ export default {
 @import './assets/Style/general.scss';
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 #App {
-  height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
+
 }
 .color-title {
     background-color: rgba( $blueLagoon, .15);
