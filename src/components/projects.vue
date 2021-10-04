@@ -78,6 +78,7 @@ export default {
     .row-bot {
         width: 70vw;
         margin: 0 auto;
+        padding-bottom: 240px;
         display: flex;
         flex-wrap: wrap;
         .card {

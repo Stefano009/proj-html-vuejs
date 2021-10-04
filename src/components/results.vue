@@ -12,8 +12,10 @@
                 </div>
             </div>
         </div>
-        <div v-for="(img, index) in imgs" :key="index" class="small-row">
+        <div class="small-row">
+            <div v-for="(img, index) in imgs" :key="index" class="img">
             <img :src="require(`../${img.img}`)" alt="">
+            </div>
         </div>
     </div>
 </template>
@@ -34,10 +36,10 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/Style/brandColors.scss';
 .wrapper {
-    height: 70vh;
+    height: 90vh;
     .big-row {
         background-image: url("../assets/img/bg-7.jpg");
-        height:90%;
+        height:70%;
         width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -80,6 +82,20 @@ export default {
                 h2 {
                     font-size: 2rem;
                 }
+            }
+        }
+    }
+    .small-row {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        height:30%;
+        background-color: $woodsmoke;
+        .img {
+            filter: invert(50%);
+            padding: 0 60px;
+            img {
+                width: 100px;
             }
         }
     }
