@@ -44,5 +44,13 @@ export default {
     background-color: rgba( $blueLagoon, .15);
     color: $blueLagoon;
   }
+.btn:hover,
+.btn-left:hover,
+.btn-right:hover {
+  background-color: lighten($blueLagoon, 10%) !important;
+  span {
+    color: $white;
+  }
+}
 
 </style>

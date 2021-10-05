@@ -19,12 +19,39 @@
             </div>
             </div>
         </div>
+        <div class="position">
+            <div class="slider"></div>
+            <div class="full slider"></div>
+            <div class="slider"></div>
+        </div>
+        <div v-for="(position, index) in positions" class="square" :key="index" :style="position">
+        </div>
     </div>
 </template>
 
 <script>
 export default {
     name: 'Jumbo',
+    data(){
+        return{
+            positions: [
+                'top: 5%; left: 5%',
+                'top: 10%; left: 10%',
+                'top: 23%; left: 23%',
+                'top: 60%; left: 60%',
+                'top: 98%; left: 98%',
+                'top: 23%; left: 32%',
+                'top: 21%; left: 54%',
+                'top: 26%; left: 32%',
+                'top: 10%; left: 6%',
+                'top: 52%; left: 4%',
+                'top: 21%; left: 18%',
+                'top: 34%; left: 6%',
+                'top: 10%; left: 62%',
+                'top: 10%; left: 3%',
+            ]
+        }
+    }
 }
 </script>
 
@@ -36,6 +63,19 @@ div{
     justify-content: center;
     align-items: center;
     height: 80%;
+    position: relative;
+    .slider {
+        height:35px;
+        width:8px;
+        border: 1px solid $blueLagoon;
+        margin: 5px;
+        border-radius: .3rem;
+    }
+    .position {
+        position: absolute;
+        top: 10%;
+        right:10px;
+    }
     .center-item {
         height:10vh;
         .row {
@@ -75,6 +115,13 @@ div{
             flex-direction: row;
             justify-content:space-around;
         }
+    }
+    .square {
+        width: 100px;
+        height: 100px;
+        background-color:rgba($pumice, .4);
+        position:absolute;
+        z-index: -1;
     }
 }
 

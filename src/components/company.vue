@@ -68,6 +68,8 @@
       <div class="right">
           <img src="../assets/img/about-4.jpg" alt="">
       </div>
+      <img class="top bullets" src="../assets/img/svg-0.svg" alt="">
+      <img class="bot bullets" src="../assets/img/svg-0.svg" alt="">
   </div>
 </template>
 
@@ -84,6 +86,7 @@ export default {
     width: 100%;
     background-color: $woodsmoke;
     display: flex;
+    position:relative;
     .left, 
     .right {
         width: 50vw;
@@ -96,7 +99,7 @@ export default {
         color: $white;
         display: flex;
         flex-wrap: wrap;
-        padding-left: 20vw;
+        padding-left: 15vw;
         .row {
             padding-top: 25%;
             h3 {
@@ -148,18 +151,32 @@ export default {
                     margin:40px 40px 200px;
                     font-size:1.4rem;
                 }
-                .btn-left span{
+                .btn-left {
                     background-color:$elm;
                     padding: 15px;
                     border-radius: .3rem;
                 }
-                .btn-right span{
-                    padding: 15px;
+                .btn-right{
                     border-radius: .3rem;
+                    padding:15px;
                     border: 1px solid $elm;
                 }
-            }
-        
+        }        
+    }
+    .bullets {
+        height:100px;
+        position:absolute;
+        opacity: .3;
+    }
+    .top{
+        top: 0;
+        left:50%;
+        transform: translate( -50%, -25%);
+    }
+    .bot{
+        bottom: 0;
+        left:50%;
+        transform: translate( -50%, 70%)
     }
 }
 </style>
