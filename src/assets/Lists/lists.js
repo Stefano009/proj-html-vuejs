@@ -90,6 +90,10 @@ const resultsPng = [{
     {
         img: 'assets/img/logo-4.png'
     },
-]
+];
 
-export { servicesCard, projectNav, projectCard, innerRow, resultsPng };
+const about = ['The Company', 'Institutional', 'Social & Events', 'Innovation', 'Environment', 'Technology']
+const services = ['Audit & Assurance', 'Financial Advisory', 'Analytics M&A', 'Middle Marketing', 'Legal Consulting', 'Regulatory Risk']
+const support = ['Responsibility', 'Terms of Use', 'About Cookies', 'Privacy Policy', 'Accessibility', 'Information']
+
+export { servicesCard, projectNav, projectCard, innerRow, resultsPng, about, services, support };

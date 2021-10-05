@@ -55,7 +55,7 @@
         </span>
         <span>
             <i class="fas fa-map-marker-alt"></i>
-            Main Avenue, 987
+            MAIN AVENUE, 987
         </span>
         <div class="btn">
                 VIEW MAP
